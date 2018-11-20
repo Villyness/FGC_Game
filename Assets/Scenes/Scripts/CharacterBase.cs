@@ -1,36 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class CharacterBase:MonoBehaviour
 {
-    public int Health;
+    public int CurrentHealth;
     public int AtkDamage;
     public int GrabDamage;
 
-    public void Attack()
+    //private int actualHealth;
+
+    public virtual void Attack()
     {
-        Debug.Log("Yo!");
+        //Debug.Log("Yo!");
     }
 
-    public void Defend()
-    {
-
-    }
-
-    public void Grab()
+    public virtual void Defend()
     {
 
     }
 
-    public void Skill1()
+    public virtual void Grab()
     {
 
     }
 
-    public void Skill2()
+    public virtual void Skill1()
     {
 
+    }
+
+    public virtual void Skill2()
+    {
+
+    }
+
+    public void Change(int amount)
+    {
+        CurrentHealth -= amount;
     }
 
 }
