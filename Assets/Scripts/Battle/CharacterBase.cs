@@ -5,10 +5,19 @@ using System;
 
 public class CharacterBase:MonoBehaviour
 {
+    public enum CurrentAction
+    {
+        Attacking,
+        Defending,
+        Grabbing
+    };
+
+    public CurrentAction MyCurrentAction;
+
     public int CurrentHealth;
     public int AtkDamage;
     public int GrabDamage;
-
+    public int DefendValue;
     //private int actualHealth;
 
     public virtual void Attack()
@@ -36,9 +45,18 @@ public class CharacterBase:MonoBehaviour
 
     }
 
-    public void Change(int amount)
+    public virtual void Change(int amount, CurrentAction EnemyState)
     {
-        CurrentHealth -= amount;
+        if (MyCurrentAction == CurrentAction.Defending && EnemyState == CurrentAction.Grabbing)
+        {
+            CurrentHealth -= amount;
+        }
+        else
+        {
+            CurrentHealth -= (amount - DefendValue);
+        }
+
+        DefendValue = 0;
     }
 
 }
