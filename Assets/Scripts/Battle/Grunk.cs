@@ -14,6 +14,7 @@ public class Grunk : CharacterBase
 	{
 	    CurrentHealth = 100;
 	    FindObjectOfType<Rabbit>().Attacked += Change;
+	    FindObjectOfType<Rabbit>().Grabbed += Change;
 	}
 
     public override void Attack()
