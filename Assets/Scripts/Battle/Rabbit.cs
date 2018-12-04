@@ -9,6 +9,7 @@ public class Rabbit : CharacterBase
 
     public event Action<int, CurrentAction> Attacked;
     public event Action<int, CurrentAction> Grabbed;
+    public event Action<int, CurrentAction> Defended;
 
     void Start()
     {
@@ -33,6 +34,10 @@ public class Rabbit : CharacterBase
     {
         DefendValue = 5;
         MyCurrentAction = CurrentAction.Defending;
+        if (Defended != null)
+        {
+            Defended(DefendValue, MyCurrentAction);
+        }
     }
 
     public override void Grab()
