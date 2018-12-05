@@ -2,4 +2,18 @@
 (Examining Bed - Day 2) Ehhh... later.
 (Examining Bed - Day 3) Nope.
 
+(Examining Desk - Day 1) Don't think I'll need anything.
+(Examining Desk - Day 2) I should probably get around to sorting all this out...
+(Examining Desk - Day 3A) One sec'. (After desk is clean) There we go. All better.
+(Examining Desk - Day 3B) I'll clean this up after the tournament.
 
+(Examining Clothes - Day 1) Just a pile of clothes.
+(Examining Clothes - Day 2) Never realised how much they stunk.
+(Examining Clothes - Day 3A) Hold up. (After cleaning up) Whew, much better.
+(Examining Clothes - Day 3B) Gotta ask mum how to use the washing machine.
+
+(Examining Bookshelf) My Hero Macademia was nuts man. I can't wait for the sequel!
+
+(Upon entering venue) Wow, sure is packed.
+
+(After battle with Archie) Yeah, good games.

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class GameManager : MonoBehaviour
 	{
 		_battleMenu = GameObject.Find("BattleManager");
         _playerMenu = GameObject.Find("BattleMenu1");
+
+	    FindObjectOfType<BattleMenu>().GameSet += SceneSwitch;
 	}
 	
 	// Update is called once per frame
@@ -26,4 +29,9 @@ public class GameManager : MonoBehaviour
             _playerMenu.SetActive(true);
 	    }
 	}
+
+    public void SceneSwitch(int sceneNumber)
+    {
+        SceneManager.LoadScene(3);
+    }
 }

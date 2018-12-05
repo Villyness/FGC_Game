@@ -1,0 +1,3 @@
+(Upon being talked to) Oh hey there! Want some games?
+	(Yes) Alright! Let's go!
+	(No) Another time then!
