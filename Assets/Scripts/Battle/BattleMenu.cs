@@ -29,6 +29,7 @@ public class BattleMenu : MonoBehaviour
 	{
 	    if (FindObjectOfType<Rabbit>().CurrentHealth <= 0)
 	    {
+            GetComponent<AudioSource>().Play();
 	        if (GameSet != null)
 	        {
 	            GameSet(_sceneNumber);

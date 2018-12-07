@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-using UnityEngine.XR.WSA.Input;
-using Random = System.Random;
+//using UnityEngine.XR.WSA.Input;
+//using Random = System.Random;
 
 public class Grunk : CharacterBase
 {
