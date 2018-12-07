@@ -1,0 +1,4 @@
+(Upon being talked to) Are you here to fight me?
+	(Yes) Let's begin.
+
+(After Game) Good games.
